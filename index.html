@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>E-commerce</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <button onclick="mostrarSeccion('productos')">Productos</button>
+    <button onclick="mostrarSeccion('carrito')">Carrito</button>
+    <button onclick="mostrarSeccion('pedidos')">Pedidos</button>
+  </nav>
+
+  <main>
+    <!-- Productos -->
+    <section id="productos" class="seccion">
+      <h2>Lista de Productos</h2>
+      <div id="lista-productos"></div>
+      <h3>Agregar Producto</h3>
+      <form id="form-producto">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="descripcion" placeholder="Descripción" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <input type="text" id="categoria" placeholder="Categoría" required>
+        <input type="text" id="urlImagen" placeholder="URL Imagen">
+        <input type="number" id="stock" placeholder="Stock" required>
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+
+    <!-- Carrito -->
+    <section id="carrito" class="seccion oculto">
+      <h2>Carrito</h2>
+      <div id="lista-carrito"></div>
+      <button onclick="realizarPedido()">Realizar Pedido</button>
+    </section>
+
+    <!-- Pedidos -->
+    <section id="pedidos" class="seccion oculto">
+      <h2>Historial de Pedidos</h2>
+      <div id="lista-pedidos"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

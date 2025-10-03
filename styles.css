@@ -1,0 +1,109 @@
+/* Fuente moderna */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #6a11cb, #8e2de2);
+  color: #333;
+}
+
+/* Barra de navegación */
+nav {
+  background: linear-gradient(90deg, #6a11cb, #8e2de2);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+nav button {
+  padding: 10px 20px;
+  background: white;
+  color: #6a11cb;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background: #6a11cb;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Contenido principal */
+main {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Secciones */
+.seccion {
+  margin-top: 30px;
+}
+
+.oculto {
+  display: none;
+}
+
+/* Tarjetas (productos, pedidos, carrito) */
+.producto, .pedido, .carrito-item {
+  background: white;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.producto:hover, .pedido:hover, .carrito-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Títulos */
+h2, h3 {
+  color: #4b0082;
+  text-align: center;
+}
+
+/* Botones generales */
+button, input[type="submit"] {
+  background: linear-gradient(90deg, #6a11cb, #8e2de2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: linear-gradient(90deg, #8e2de2, #6a11cb);
+  transform: translateY(-2px);
+}
+
+/* Formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+form input:focus {
+  border: 1px solid #6a11cb;
+  box-shadow: 0 0 6px rgba(106, 17, 203, 0.3);
+}
